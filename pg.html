@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Basic test page</title>
+	</head>
+	<body>
+		<p>The quick, brown fox jumps over the lazy dog.</p>
+		<div id="answer"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>$(document).ready(function() {
+		var msg = 'indexedDB' in window ? "support is present" : "there is no indexedDB support, I'm afraid";
+		$("#answer").text(msg);
+		})</script>
+	</body>
+</html>
