@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="data:,">
+	</head>
+	<body>
+		<audio id="ad" src="tock.wav" autoplay="false"></audio>
+		<a onclick="count = 0; playSound();">Play</a>
+	<script>
+		var count = 0;
+		function playSound() {
+			console.log("let's try to play");
+			document.getElementById("ad").play();
+			if (++count < 5) {
+				setTimeout(playSound, 1000);
+			}
+		}
+	</script>
+	</body>
+</html>
